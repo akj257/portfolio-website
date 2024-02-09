@@ -61,6 +61,9 @@ section p {
 .project h3 {
     margin-top: 0;
 }
+#about .container img{
+    width: 50px;
+}
 
 /* Footer Styles */
 footer {
