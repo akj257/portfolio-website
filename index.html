@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Abhay Joshi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Q+MBfszHQEsONanUdyJ/3S0ezFSrOTWpLq+ro+G4eUuX4MWNyKoyw6RTTh4m4t+XTrpWu5s4yI0g3YMh2z+R2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-<body class="bg-black text-white flex flex-col items-center justify-center">
-
-    <!-- Navbar Here !! -->
-    <nav class="flex justify-around items-center py-4 rounded-xl shadow-md shadow-orange-300 w-[80%]">
-        <div class="flex justify-center items-center gap-2">
-            <img class="h-9 w-9 rounded-full"
-                src="/assets/image.jpg">
-            <h1 class="text-3xl font-bold">Abhay Joshi</h1>
-        </div>
-        <div>
-            <ul class="flex justify-center items-center gap-8 ">
-                <li class="text-xl font-bold hover:text-orange-400 trasition-all ease-in-out delay-75 duration-200">
-                    About</li>
-                <li class="text-xl font-bold hover:text-orange-400 trasition-all ease-in-out delay-75 duration-200">
-                    Projects</li>
-                <li class="text-xl font-bold hover:text-orange-400 trasition-all ease-in-out delay-75 duration-200">
-                    Contact</li>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Abhay Joshi, a passionate web developer based in [Your City, Country]. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Let's build something great together!</p>
+            <img src="assets/image.jpg" alt="Profile Picture">
         </div>
-    </nav>
+    </section>
 
-    <!-- Hero Section Here !! -->
-
-    <!-- MAIN Text -->
-    <div class="w-full flex flex-col items-center justify-center md:w-[80%]">
-        <div id="main-text" class="text-[250px] font-bold tracking-wider">
-            DEVELOPER
-        </div>
-        <div class="flex items-center justify-between py-2">
-            <div class="w-80 text-wrap text-left line-clamp-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum excepturi dignissimos ab ducimus
-                    minus, aliquid nesciunt suscipit, laudantium iste veniam sint, rem sunt?</p>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Deescription of Project 1. Lorem ipsum dolor sit amet, consctetur adipiscing elit. Curabitur posuere urna nec dui congue, at interdum orci tempus.</p>
+                <img src="assets/project1.jpg" alt="Project 1 Image">
             </div>
-            <div class="w-80 text-wrap text-left line-clamp-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum excepturi dignissimos ab ducimus
-                    minus, aliquid nesciunt suscipit, laudantium iste veniam sint, rem sunt?</p>
-            </div>
-            <div class="w-80 text-wrap text-left line-clamp-3 underline decoration-2 underline-offset-4">
-                GET IN TOUCH →
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere urna nec dui congue, at interdum orci tempus.</p>
+                <img src="assets/project2.jpg" alt="Project 2 Image">
             </div>
         </div>
+    </section>
 
-    </div>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email at <a href="mailto:example@email.com">example@email.com</a>.</p>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
+    </footer>
 </body>
-
 </html>
